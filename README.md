@@ -168,8 +168,8 @@ O projeto implementa o conceito de **defesa profunda**:
 
 **Fabrício Bezerra**
 
-- LinkedIn: [Seu LinkedIn](https://linkedin.com/in/fabriciobzrr)
-- GitHub: [Seu GitHub](https://github.com/fabriciobzrr)
+- LinkedIn: [LinkedIn](https://linkedin.com/in/fabriciobzrr)
+- GitHub: [GitHub](https://github.com/fabriciobzrr)
 
 ## 🙏 Agradecimentos
 
