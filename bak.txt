@@ -1,0 +1,70 @@
+    public static void cadastrarProduto() {
+        try {
+            IO.println("\n-------- Cadastrar Produto --------");
+
+            IO.print("\nNome do Produto: ");
+            String nome = input.nextLine().trim();
+
+            if (nome.isEmpty()) {
+                throw new EstoqueException("Nome do produto não pode estar vazio!");
+            }
+
+            IO.print("Preço do Produto: R$ ");
+            double preco = input.nextDouble();
+            input.nextLine();
+
+            if (preco <= 0) {
+                throw new EstoqueException("Preço deve ser maior que zero!");
+            }
+
+            IO.print("Quantidade do Produto (ENTER para zero): ");
+            String quantidadeTexto = input.nextLine();
+
+            int quantidade;
+            if (quantidadeTexto.isEmpty()) {
+                quantidade = 0;
+                IO.println("Quantidade: " + quantidade);
+            } else {
+                quantidade = Integer.parseInt(quantidadeTexto);
+            }
+
+            if (quantidade < 0) {
+                throw new EstoqueException("Quantidade não pode ser negativa!");
+            }
+
+            IO.print("Nome do Fornecedor: ");
+            String fornecedor = input.nextLine();
+
+            if (fornecedor.isEmpty()) {
+                throw new EstoqueException("Nome do fornecedor não pode estar vazio!");
+            }
+
+            Produto produto = new Produto(nome, preco, quantidade, fornecedor);
+            IO.println("\n-------- Resumo do item --------");
+            IO.println(produto.toString());
+
+            IO.print("\nConfirmar cadastramento do item? (S/N): ");
+            String opcao = input.nextLine();
+
+            if (opcao.isEmpty()) {
+                IO.println("Opção inválida! Retornando ao menu principal!");
+                return;
+            }
+
+            char primeiraLetra = opcao.toUpperCase().charAt(0);
+            if(primeiraLetra == 'S') {
+                estoqueService.adicionarProduto(produto);
+                IO.println("\n✅ Produto cadastrado com sucesso!");
+                IO.println("--------------------------------");
+            } else if (primeiraLetra == 'N') {
+                IO.println("\n❌ Cadastro cancelado! Retornando ao Menu Principal!");
+                IO.println("--------------------------------");
+            } else {
+                IO.println("⚠ Opção inválida! Retornando ao menu principal!");
+            }
+        } catch (EstoqueException err) {
+            IO.println("⛔ Erro: " + err.getMessage());
+        } catch (InputMismatchException err) {
+            IO.println("⛔ Erro: opção inválida! Digite um valor válido!");
+        }
+    }
