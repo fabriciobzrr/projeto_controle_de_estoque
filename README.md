@@ -23,6 +23,7 @@ Este projeto é o segundo de uma série de 10 projetos que estou desenvolvendo p
 
 ## 🏗️ Estrutura do Projeto
 
+```
 projeto-controle-estoque/
 │
 ├── src/
@@ -39,6 +40,7 @@ projeto-controle-estoque/
 │
 ├── .gitignore
 └── README.md
+```
 
 
 ## 🛠️ Tecnologias Utilizadas
