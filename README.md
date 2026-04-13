@@ -94,7 +94,7 @@ projeto-controle-estoque/
 ## 📊 Exemplo de Uso
 
 ## Cadastrando um Produto
-
+```
 -------- Cadastrar Produto --------
 
 Nome do Produto: Notebook Gamer
@@ -108,10 +108,11 @@ Nome do Fornecedor: TechFornecedor
 Confirmar cadastramento do item? (S/N): S
 
 ✅ Produto cadastrado com sucesso!
+```
 
-- Entrada no Estoque
-
-- -------- Entrada de Estoque --------
+## Entrada no Estoque
+```
+---------- Entrada de Estoque --------
 ID do produto: 1
 
 Produto encontrado: Notebook Gamer
@@ -123,9 +124,10 @@ Confirmar entrada de 5 unidades? (S/N): S
 
 ✅ Entrada realizada com sucesso!
 Quantidade disponível: 15
+```
 
 ## Produtos com Estoque Baixo
-
+```
 -------- Listar Produtos Com Estoque Baixo --------
 Estoque Mínimo Limite: 3
 
@@ -133,6 +135,7 @@ Estoque Mínimo Limite: 3
 | #2 | Mouse | R$ 50,00 | Qtde: 2 | Fornecedor: PerifericosLtda |
 
 Registros: 1
+```
 
 ## 🔒 Validações Implementadas
 
