@@ -23,19 +23,19 @@ Este projeto é o segundo de uma série de 10 projetos que estou desenvolvendo p
 
 ## 🏗️ Estrutura do Projeto
 
-projeto_controle_estoque/
+projeto-controle-estoque/
 │
 ├── src/
-│ ├── application/
-│ │ └── Program.java # Menu e interação com usuário
-│ ├── entities/
-│ │ └── Produto.java # Entidade Produto
-│ ├── services/
-│ │ └── EstoqueService.java # Regras de negócio
-│ ├── enums/
-│ │ └── OpcoesMenu.java # Opções do menu principal
-│ └── exceptions/
-│ └── EstoqueException.java # Exceção personalizada
+│   ├── application/
+│   │   └── Program.java
+│   ├── entities/
+│   │   └── Produto.java
+│   ├── services/
+│   │   └── EstoqueService.java
+│   ├── enums/
+│   │   └── OpcoesMenu.java
+│   └── exceptions/
+│       └── EstoqueException.java
 │
 ├── .gitignore
 └── README.md
